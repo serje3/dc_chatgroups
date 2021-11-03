@@ -23,6 +23,8 @@
     text-transform: uppercase;
 
     color: #E0E0E0;
+
+    z-index: 1000;
 }
 
 .channel_name__chat{
@@ -35,6 +37,8 @@
     height: calc(100% - 66px);
     width: 970px;
     margin: 0 auto;
+    overflow: hidden;
+    
 }
 
 .input__chat{
@@ -86,8 +90,93 @@
 
     background: #2F80ED;
     border-radius: 8px;
+
+    cursor: pointer;
+}
+.messages__chat{
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: calc(100% - 10.5%);
+    bottom: 93px;
+    z-index: 70;
+    overflow-y: auto;
 }
 
+.message__messages{
+    position: relative;
+    min-height: 62px;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.avatar__message{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+
+    border-radius: 7px;
+}
+
+.avatar__message > img{
+    width: 42px;
+    -webkit-user-drag: none;
+
+}
+
+.username__message{
+    display: inline;
+    width: fit-content;
+    margin-left: 70px;
+    
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    
+    letter-spacing: -0.035em;
+    
+    color: #828282;
+}
+.date__message{
+    display: inline;
+    width: fit-content;
+    margin-left: 10px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    letter-spacing: -0.035em;
+    
+    color: #828282;
+}
+
+.text__message{
+    margin-left: 70px;
+    margin-top: 12px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    letter-spacing: -0.035em;
+
+    color: #E0E0E0;
+}
 
 @media (max-width: 1400px) {
     .wrapper__chat{
