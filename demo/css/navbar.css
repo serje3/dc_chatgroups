@@ -19,7 +19,7 @@
     position: absolute;
     top: 17px;
     left: 33px;
-    width: 79px;
+    width: 100px;
 
     font-family: Noto Sans;
     font-style: normal;
@@ -155,50 +155,5 @@
     color: #BDBDBD;
 }
 
-.profile__navbar{
-    position: absolute;
-    top: calc(100% - 75.4px);
-    height: 75.4px;
-    width: 100%;
-    background-color: #0B090C;
-}
 
-.logo__profile{
-    position: absolute;
-    top: 15px;
-    left: 27.7px;
-    width: 42px;
-    height: 42px;
-
-    border-radius: 7px;
-
-    /* temp */
-    background-color: white;
-}
-
-.username__profile{
-    position: absolute;
-    left: 98px;
-    top: 24px;
-
-    font-family: Noto Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 25px;
-    /* identical to box height */
-    
-    letter-spacing: -0.035em;
-    
-    color: #828282;
-}
-
-.options__profile{
-    position: absolute;
-    height: 25px;
-    width: 25px;
-    left: 275px;
-    top: 24px;
-
-    cursor: pointer;
-}
+/* profile navbar in profile.css */

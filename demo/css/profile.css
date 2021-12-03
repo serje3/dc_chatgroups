@@ -1,0 +1,126 @@
+.profile__navbar{
+    position: absolute;
+    top: calc(100% - 75.4px);
+    height: 75.4px;
+    width: 100%;
+    background-color: #0B090C;
+}
+
+.logo__profile{
+    position: absolute;
+    top: 15px;
+    left: 27.7px;
+    width: 42px;
+    height: 42px;
+
+    border-radius: 7px;
+
+    /* temp */
+    background-color: white;
+}
+
+.username__profile{
+    position: absolute;
+    left: 98px;
+    top: 24px;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    
+    letter-spacing: -0.035em;
+    
+    color: #828282;
+}
+
+.options__profile{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    left: 275px;
+    top: 24px;
+
+    cursor: pointer;
+}
+.profile__options__menu{
+    position: absolute;
+    width: 192px;
+    height: 173px;
+    left: 112px;
+    top: calc(100% - 220px);
+
+    background: #252329;
+    border: 1px solid #3C393F;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    z-index: 999;
+    visibility: hidden;
+
+    padding-top: 11px;
+    padding-left: 12px;
+
+}
+
+.visible{
+    visibility: visible;
+}
+
+.button_options__menu{
+    width: 164px;
+    height: 39px;
+    margin-top: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.active {
+    background: #3C393F;
+}
+
+.button_options__menu > div{
+    position: relative;
+    left: 13px;
+    top: 11px;
+
+}
+
+.button_options__menu > div > img {
+    -webkit-user-drag: none;
+}
+
+.button_options__menu > div > span{
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.035em;
+
+    color: #E0E0E0;
+
+    margin-left: 10px;
+
+}
+
+.hr_options__menu{
+    width: 164px;
+    height: 0px;
+    
+    margin-top: 10px;
+
+    border: 1px solid #3C393F;
+    transform: rotate(0deg);
+}
+
+.button_logout{
+    margin-top: 10px;
+}
+
+.button_logout > div > span{
+    color: #EB5757;
+}
