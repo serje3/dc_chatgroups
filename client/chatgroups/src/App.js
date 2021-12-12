@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/css/reset.css'
+import './assets/css/style.css'
+import './assets/css/navbar.css'
+import './assets/css/profile.css'
+import './assets/css/chat.css'
+import './assets/css/windows.css'
+import './assets/css/channel_info.css'
+import Wrapper from "./containers/wrapper";
+import NavbarComponent from "./components/navbar";
+import ChatComponent from "./components/chat";
+import Hidden from "./containers/hidden";
+import AddChannel from "./components/windows/add_channel";
+import ProfileOptions from "./components/pages/navbar/profileOptions";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+        <Hidden>
+            <AddChannel/>
+            <ProfileOptions/>
+        </Hidden>
+        <NavbarComponent/>
+        <ChatComponent/>
+    </Wrapper>
   );
 }
+
 
 export default App;
