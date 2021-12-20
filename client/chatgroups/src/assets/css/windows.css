@@ -4,13 +4,15 @@
     width: 100%;
     z-index: 1000;
     visibility: hidden;
+    background-color: rgba(0, 0,0, 0.3);
 }
 
 .window_add_channel{
     position: relative;
     width: 656px;
     height: 359px;
-    left: 25%;
+    left: 50%;
+    transform: translate(-50%);
     top: 30%;
 
     background: #120F13;
@@ -21,8 +23,8 @@
     position: absolute;
     left: 45px;
     top: 35px;
-    
-    font-family: Noto Sans;
+
+    font-family: Noto Sans, serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -58,7 +60,7 @@
     width: calc(100% - 29px);
     color: #F2F2F2;
 
-    font-family: Noto Sans;
+    font-family: Noto Sans, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -95,7 +97,7 @@
     border: 0;
     resize: none;
 
-    font-family: Noto Sans;
+    font-family: Noto Sans, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -124,7 +126,7 @@
     padding-left: 30px;
     padding-top: 7px;
 
-    font-family: Noto Sans;
+    font-family: Noto Sans, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -136,4 +138,33 @@
     color: #F2F2F2;
     user-select: none;
     cursor:pointer;
+}
+
+.visible{
+    visibility: visible !important;
+    animation: window-appearance 200ms ease-in;
+}
+
+@keyframes window-appearance {
+    0%{
+        opacity: 0;
+        background-color: transparent;
+    }
+
+    100%{
+        opacity: 1;
+        background-color: rgba(0, 0,0, 0.3);
+    }
+}
+
+@keyframes window-disappearance {
+    0%{
+        opacity: 1;
+        background-color: rgba(0, 0,0, 0.3);
+    }
+
+    100%{
+        opacity: 0;
+        background-color: transparent;
+    }
 }

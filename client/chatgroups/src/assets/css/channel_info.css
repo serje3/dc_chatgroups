@@ -1,0 +1,136 @@
+.button_back__header__navbar{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    left: 16px;
+    top: 14px;
+}
+
+.button_back__header__navbar > img{
+    width: 28px;
+    height: 28px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.title_channel_info{
+    left: 55px;
+}
+
+.channel_info__navbar{
+    position: absolute;
+    top: 60px;
+    height: calc(100% - 137px);
+    width: 100%;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+
+}
+
+.channel_info__navbar::-webkit-scrollbar{
+    width: 0;
+}
+
+.channel_info__navbar:hover::-webkit-scrollbar{
+    width: 5px;
+}
+
+.channel_name__info{
+    width: 210px;
+    margin-top: 25px;
+    margin-left: 33px;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+
+    color: #E0E0E0;
+
+    overflow-wrap: break-word;
+}
+
+.channel_description__info{
+    width: 257px;
+    margin-top: 18px;
+    margin-left: 33px;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.035em;
+
+    color: #E0E0E0;
+    word-wrap: break-word;
+}
+
+
+.channel_members__info{
+    margin-top: 44px;
+    margin-left: 27.7px;
+}
+
+.title__members{
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+
+    color: #E0E0E0;
+
+}
+
+.list__members{
+    margin-top: 25px;
+}
+
+.member__members__list{
+    display: block;
+    height: 42px;
+    margin-bottom: 32px;
+}
+
+.img__member{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.img__member > img {
+    width: 42px;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.name__member{
+    width: fit-content;
+    height: 24px;
+    margin-left: 55px;
+    transform: translate(0, 9px);
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    letter-spacing: -0.035em;
+
+    color: #828282;
+}
