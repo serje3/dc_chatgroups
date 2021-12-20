@@ -4,7 +4,7 @@ import default_user_img from '../../../assets/img/user-default.jpg'
 function ProfileNavbar(props){
     const username = props.username
     const userPhoto = (props.userPhoto)? props.userPhoto : default_user_img;
-    const openProfileOptions = () => {
+    const openProfileOptions = (event) => {
         const optionsMenu = document.getElementById('profile_options')
         optionsMenu.classList.add('visible')
     }

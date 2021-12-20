@@ -1,4 +1,4 @@
-import DialogBox from "../../../containers/windows/dialogBox";
+import DialogBox from "../../windows/dialogBox";
 
 function ProfileOptions(props){
 

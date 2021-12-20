@@ -3,8 +3,8 @@
     height: 100%;
     width: 100%;
     z-index: 1000;
-    background: rgba(0, 0,0, 0.3);
     visibility: hidden;
+    background-color: rgba(0, 0,0, 0.3);
 }
 
 .window_add_channel{
@@ -137,4 +137,33 @@
     color: #F2F2F2;
     user-select: none;
     cursor:pointer;
+}
+
+.visible{
+    visibility: visible !important;
+    animation: window-appearance 200ms ease-in;
+}
+
+@keyframes window-appearance {
+    0%{
+        opacity: 0;
+        background-color: transparent;
+    }
+
+    100%{
+        opacity: 1;
+        background-color: rgba(0, 0,0, 0.3);
+    }
+}
+
+@keyframes window-disappearance {
+    0%{
+        opacity: 1;
+        background-color: rgba(0, 0,0, 0.3);
+    }
+
+    100%{
+        opacity: 0;
+        background-color: transparent;
+    }
 }

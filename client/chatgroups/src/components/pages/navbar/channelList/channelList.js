@@ -5,7 +5,7 @@ import SearchNavbar from "../../../../containers/navbar/search";
 import ChannelList from "../../../../containers/navbar/channels";
 import ChannelListItem from "./channelItem";
 
-function ChannelsNavbar() {
+function ChannelsNavbar(props) {
 
     const openAddChannelWindow = () => {
         document.getElementById('add_channel').classList.add('visible');
@@ -26,7 +26,7 @@ function ChannelsNavbar() {
                 <input type="text" className="input__search" placeholder="Search"/>
             </SearchNavbar>
             <ChannelList>
-                <ChannelListItem name={"front-end developers"}/>
+                <ChannelListItem name={"front-end developers"} onClick={props.goToChannelInfo}/>
             </ChannelList>
         </>
     )

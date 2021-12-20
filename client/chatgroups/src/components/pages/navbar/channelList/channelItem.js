@@ -8,7 +8,7 @@ function ChannelListItem(props) {
         return current[0]
     }).slice(0,2).join('')
     return (
-        <div className="item__channels">
+        <div className="item__channels" onClick={props.onClick}>
             <div className="logo__item">{shortcutName}</div>
             <div className="name__item">{channelName}</div>
         </div>

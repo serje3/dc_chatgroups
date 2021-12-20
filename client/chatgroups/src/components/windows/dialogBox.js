@@ -3,7 +3,11 @@ function DialogBox(props) {
     const checkFocus = (event) => {
         const dialogBox = document.getElementById(props.id)
         if (event.target === dialogBox){
-            dialogBox.classList.remove('visible')
+            dialogBox.style.animation = 'window-disappearance 200ms ease-out'
+            setTimeout(()=>{
+                dialogBox.classList.remove('visible')
+                dialogBox.style.animation = ''
+            }, 100)
         }
     }
     let style = (props.style)?props.style : {};

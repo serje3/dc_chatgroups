@@ -17,8 +17,8 @@ function App() {
   return (
     <Wrapper>
         <Hidden>
-            <AddChannel/>
             <ProfileOptions/>
+            <AddChannel/>
         </Hidden>
         <NavbarComponent/>
         <ChatComponent/>
