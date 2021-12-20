@@ -11,7 +11,8 @@
     position: relative;
     width: 656px;
     height: 359px;
-    left: 25%;
+    left: 50%;
+    transform: translate(-50%);
     top: 30%;
 
     background: #120F13;
@@ -22,8 +23,8 @@
     position: absolute;
     left: 45px;
     top: 35px;
-    
-    font-family: Noto Sans;
+
+    font-family: Noto Sans, serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -59,7 +60,7 @@
     width: calc(100% - 29px);
     color: #F2F2F2;
 
-    font-family: Noto Sans;
+    font-family: Noto Sans, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -96,7 +97,7 @@
     border: 0;
     resize: none;
 
-    font-family: Noto Sans;
+    font-family: Noto Sans, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -125,7 +126,7 @@
     padding-left: 30px;
     padding-top: 7px;
 
-    font-family: Noto Sans;
+    font-family: Noto Sans, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
