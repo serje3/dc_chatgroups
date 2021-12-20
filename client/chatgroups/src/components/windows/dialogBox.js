@@ -8,7 +8,11 @@ function DialogBox(props) {
                 dialogBox.classList.remove('visible')
                 dialogBox.style.animation = ''
             }, 100)
+            if (props.closeCallback){
+                props.closeCallback()
+            }
         }
+
     }
     let style = (props.style)?props.style : {};
 

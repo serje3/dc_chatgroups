@@ -29,7 +29,7 @@
     left: 98px;
     top: 24px;
 
-    font-family: Noto Sans;
+    font-family: Noto Sans, serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -74,25 +74,33 @@
     border-radius: 8px;
     cursor: pointer;
     user-select: none;
+    opacity: 1;
+    transition: opacity 100ms ease-out;
+
+}
+
+.button_options__menu:hover{
+    opacity: 0.5;
+    transition: opacity 100ms ease-in;
 }
 
 .active {
-    background: #3C393F;
+    transition: background-color 500ms ease-in !important;
+    background-color: #3C393F;
 }
 
-.button_options__menu > div{
+.button_options__menu > .button_options_wrapper{
     position: relative;
-    left: 13px;
-    top: 11px;
-
+    left: 11px;
+    top: 8px;
 }
 
-.button_options__menu > div > img {
+.button_options__menu > .button_options_wrapper > img {
     -webkit-user-drag: none;
 }
 
-.button_options__menu > div > span{
-    font-family: Noto Sans;
+.button_options__menu > .button_options_wrapper > span{
+    font-family: Noto Sans, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -107,7 +115,7 @@
 
 .hr_options__menu{
     width: 164px;
-    height: 0px;
+    height: 0;
     
     margin-top: 10px;
 
@@ -119,6 +127,6 @@
     margin-top: 10px;
 }
 
-.button_logout > div > span{
+.button_logout > .button_options_wrapper > span{
     color: #EB5757;
 }
